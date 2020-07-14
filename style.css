@@ -1,0 +1,91 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* This is better for small screens, once min() is better supported */
+    /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
+    grid-gap: .4rem;
+    /* This is the standardized property now, but has slightly less support */
+    /* gap: 1rem */
+}
+
+.pane {
+    aspect-ratio: 9 / 16;
+    border-radius: 7.5px;
+    box-shadow: 3.25px 3.25px #16161dc0;
+    background: #1a237e;
+    background: linear-gradient(90deg, #1A237E 0%, #E91E63 100%);
+    width: clamp(90px, 16vw, 180px);
+    height: clamp(160px, 30vh, 320px);
+    margin:auto;
+    padding:auto;
+}
+
+#pane1 {
+    background: #1a237e;
+    background: repeating-linear-gradient(45deg, 
+                /* Row 1 */
+                /*b2ebf2*/
+                hsla(192, 102%, 40%, 1) 0%, hsla(192, 102%, 40%, 1) 4%, 
+                transparent 4%, transparent 5%,
+                /* Row 2 */
+                hsla(192, 102%, 40%, 1) 5%, hsla(192, 102%, 40%, 1) 8.8%, 
+                transparent 8.8%, transparent 10%,
+                /* Row 3 */
+                hsla(192, 102%, 40%, 1) 10%, hsla(192, 102%, 40%, 1) 13.7%, 
+                transparent 13.7%, transparent 15%,
+                /* Row 4 */
+                hsla(192, 102%, 40%, 1) 15%, hsla(192, 102%, 40%, 1) 18.5%, 
+                transparent 18.5%, transparent 20%,
+                /* Row 5 */
+                hsla(192, 102%, 40%, 1) 20%, hsla(192, 102%, 40%, 1) 23.4%, 
+                transparent 23.4%, transparent 25%,
+                /* Row 6 */
+                hsla(192, 102%, 40%, 1) 25%, hsla(192, 102%, 40%, 1) 28.2%, 
+                transparent 28.2%, transparent 30%,
+                /* Row 7 */
+                hsla(192, 102%, 40%, 1) 30%, hsla(192, 102%, 40%, 1) 33.1%, 
+                transparent 33.1%, transparent 35%,
+                /* Row 8 */
+                hsla(192, 102%, 40%, 1) 35%, hsla(192, 102%, 40%, 1) 37.9%, 
+                transparent 37.9%, transparent 40%,
+                /* Row 9 */
+                hsla(192, 102%, 40%, 1) 40%, hsla(192, 102%, 40%, 1) 42.7%, 
+                transparent 42.7%, transparent 45%,
+                /* Row 10 */
+                hsla(192, 102%, 40%, 1) 45%, hsla(192, 102%, 40%, 1) 47.6%, 
+                transparent 47.6%, transparent 50%,
+                /* Row 11 */
+                hsla(192, 102%, 40%, 1) 50%, hsla(192, 102%, 40%, 1) 52.4%, 
+                transparent 52.4%, transparent 55%,
+                /* Row 12 */
+                hsla(192, 102%, 40%, 1) 55%, hsla(192, 102%, 40%, 1) 57.3%, 
+                transparent 57.3%, transparent 60%,
+                /* Row 13 */
+                hsla(192, 102%, 40%, 1) 60%, hsla(192, 102%, 40%, 1) 62.1%, 
+                transparent 62.1%, transparent 65%,
+                /* Row 14 */
+                hsla(192, 102%, 40%, 1) 65%, hsla(192, 102%, 40%, 1) 67%, 
+                transparent 67%, transparent 70%,
+                /* Row 15 */
+                hsla(192, 102%, 40%, 1) 70%, hsla(192, 102%, 40%, 1) 71.8%, 
+                transparent 71.8%, transparent 75%,
+                /* Row 16 */
+                hsla(192, 102%, 40%, 1) 75%, hsla(192, 102%, 40%, 1) 76.6%, 
+                transparent 76.6%, transparent 80%,
+                /* Row 17 */
+                hsla(192, 102%, 40%, 1) 80%, hsla(192, 102%, 40%, 1) 81.5%, 
+                transparent 81.5%, transparent 85%,
+                /* Row 18 */
+                hsla(192, 102%, 40%, 1) 85%, hsla(192, 102%, 40%, 1) 86.3%, 
+                transparent 86.3%, transparent 90%,
+                /* Row 19 */
+                hsla(192, 102%, 40%, 1) 90%, hsla(192, 102%, 40%, 1) 91.2%, 
+                transparent 91.2%, transparent 95%,
+                /* Row 20 */
+                hsla(192, 102%, 40%, 1) 95%, hsla(192, 102%, 40%, 1) 96%, 
+                transparent 96%, transparent 100%),
+
+                repeating-linear-gradient(90deg, #1A237E 0%, #E91E63 100%);
+    background-blend-mode: color-dodge;
+}
